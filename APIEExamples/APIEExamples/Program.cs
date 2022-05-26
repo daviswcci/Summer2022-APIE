@@ -2,7 +2,6 @@
 
 // console application that acts like a media collection
 List<Media> collection = new List<Media>(); // list of all media objects we own
-
 // if we want to allow a user to look at the collection multiple times
 // loops! specifically while
 bool isRunning = true;
@@ -50,7 +49,7 @@ while (isRunning)
                 }
                 else if (media.GetType() == typeof(Movie)) // media object is a movie
                 {
-                    Console.WriteLine("Title: " + media.Title + " - Movie");
+                    Console.WriteLine("Title: " + media.Title + " - Movie" + media.Rating);
                 }
                 else
                 {

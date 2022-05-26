@@ -25,7 +25,7 @@ namespace APIEExamples
 
         // methods, what actions can we do with this object?
         // accessModifier optional returnType name(input){code to run}
-        public void Play()
+        public override void Play()
         {
             Console.WriteLine("How many hours did you play today?");
             int hours = Int32.Parse(Console.ReadLine());

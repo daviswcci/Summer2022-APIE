@@ -8,7 +8,6 @@ namespace APIEExamples
 {
     internal class Movie : Media
     {
-        public double Rating;
         public List<string> Cast;
         public List<string> Crew;
         public double Duration; // in seconds
@@ -16,7 +15,7 @@ namespace APIEExamples
         public bool InTheatres;
 
         // method
-        public void Play()
+        public override void Play()
         {
             Console.WriteLine("Wow, I wish [favorite cast member] was in this!");
         }
